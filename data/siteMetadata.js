@@ -1,27 +1,26 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'philmichel.com',
+  author: 'Phil Michel',
+  headerTitle: 'philmichel.com',
+  description: 'Phil Michel\'s personal website',
   language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  theme: 'dark', // system, dark or light
+  siteUrl: 'https://philmichel.com',
+  siteRepo: 'https://github.com/philmichel/philmichel.com',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
+  mastodon: 'https://fediserve.com/@phil',
+  // email: 'pmichel@gmail.com',
+  github: 'https://github.com/philmichel',
+  // x: 'https://twitter.com/x',
+  // facebook: 'https://facebook.com',
+  // youtube: 'https://youtube.com',
+  linkedin: 'https://www.linkedin.com/in/phlip',
+  // threads: 'https://www.threads.net',
+  // instagram: 'https://www.instagram.com',
+  // medium: 'https://medium.com',
+  bluesky: 'https://bsky.app/profile/pmichel.social',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
@@ -52,14 +51,14 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus, beehive
     // Please add your .env file and modify it according to your selection
-    provider: 'buttondown',
+    provider: '',
   },
   comments: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
+    provider: '', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
