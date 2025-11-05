@@ -3,4 +3,7 @@
   extends: [
     'github>philmichel/renovate-config',
   ],
+  packageRules: [
+    { matchManagers: ['npm'], enabled: false },
+  ],
 }
