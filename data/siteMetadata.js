@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/philmichel/philmichel.com',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
-  mastodon: 'https://fediserve.com/@phil',
+  mastodon: 'https://fediserve.social/@phil',
   // email: 'pmichel@gmail.com',
   github: 'https://github.com/philmichel',
   // x: 'https://twitter.com/x',
