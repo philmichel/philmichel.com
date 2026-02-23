@@ -48,9 +48,7 @@ export const cvData = {
         {
           period: '2025–2026',
           role: 'Distinguished Engineer (General Motors)',
-          bullets: [
-            'Defined technical vision and direction across Embodied AI',
-          ],
+          bullets: ['Defined technical vision and direction across Embodied AI'],
         },
         {
           period: '2024–2025',
@@ -62,9 +60,7 @@ export const cvData = {
         {
           period: '2023–2024',
           role: 'Technical Advisor to the CTO / SVP of AI',
-          bullets: [
-            'Shaped AI & ML technical strategy and identified key investment areas',
-          ],
+          bullets: ['Shaped AI & ML technical strategy and identified key investment areas'],
         },
       ],
     },
@@ -78,7 +74,7 @@ export const cvData = {
           role: 'Head of Perception & Planning',
           bullets: [
             'Led autonomy science/engineering teams across perception and planning',
-            'Scaled autonomous delivery to tens of thousands of packages across four US states'
+            'Scaled autonomous delivery to tens of thousands of packages across four US states',
           ],
         },
         {
@@ -176,7 +172,9 @@ export const cvData = {
       role: 'Developer, Special Projects Office',
       organization: 'Wolfram Research International',
       location: 'Waltham, MA',
-      bullets: ['Wrote and optimized computer vision / image processing algorithms for Mathematica'],
+      bullets: [
+        'Wrote and optimized computer vision / image processing algorithms for Mathematica',
+      ],
     },
     {
       period: '2002',
@@ -239,7 +237,13 @@ export const cvData = {
     'Cambridge University prize for outstanding undergraduate dissertation',
   ],
 
-  languages: ['German (native)', 'English (native-level)', 'Spanish (native-level)', 'Japanese (intermediate)', 'Greek (conversational)'],
+  languages: [
+    'German (native)',
+    'English (native-level)',
+    'Spanish (native-level)',
+    'Japanese (intermediate)',
+    'Greek (conversational)',
+  ],
 
   athletics: [
     'CrossFit Level 1 Trainer',
