@@ -7,7 +7,7 @@ export const metadata = genPageMetadata({ title: 'CV' })
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <div className="pt-1 pb-3 text-xl font-bold uppercase tracking-wide text-gray-700 dark:text-gray-300">
+    <div className="pt-1 pb-3 text-xl font-bold tracking-wide text-gray-700 uppercase dark:text-gray-300">
       {children}
     </div>
   )
@@ -15,7 +15,9 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function SectionDivider({ visible = false }: { visible?: boolean }) {
   return (
-    <div className={`pt-7 pb-1 md:col-span-2 ${visible ? 'border-t border-gray-200 dark:border-gray-700' : ''}`} />
+    <div
+      className={`pt-7 pb-1 md:col-span-2 ${visible ? 'border-t border-gray-200 dark:border-gray-700' : ''}`}
+    />
   )
 }
 
@@ -37,7 +39,7 @@ function Subrole({ subrole }: { subrole: CVSubrole }) {
     <div className="mt-3">
       <div className="flex flex-wrap items-baseline gap-x-2">
         <span className="text-base text-gray-700 dark:text-gray-300">{subrole.role}</span>
-        <span className="font-mono text-sm text-primary-500 dark:text-primary-400">
+        <span className="text-primary-500 dark:text-primary-400 font-mono text-sm">
           {subrole.period}
         </span>
       </div>
@@ -50,18 +52,14 @@ function ExperienceEntry({ entry }: { entry: CVEntry }) {
   return (
     <div className="pb-8 md:col-start-2">
       <div className="flex flex-wrap items-baseline gap-x-3 text-xl">
-        <span className="font-semibold text-gray-900 dark:text-gray-100">
-          {entry.organization}
-        </span>
-        {entry.role && (
-          <span className="text-gray-700 dark:text-gray-300">{entry.role}</span>
-        )}
+        <span className="font-semibold text-gray-900 dark:text-gray-100">{entry.organization}</span>
+        {entry.role && <span className="text-gray-700 dark:text-gray-300">{entry.role}</span>}
       </div>
       <div className="mt-0.5 mb-2 flex flex-wrap items-baseline gap-x-3">
-        <span className="font-mono text-sm text-primary-500 dark:text-primary-400">
+        <span className="text-primary-500 dark:text-primary-400 font-mono text-sm">
           {entry.period}
         </span>
-        <span className="text-sm italic text-gray-400 dark:text-gray-500">{entry.location}</span>
+        <span className="text-sm text-gray-400 italic dark:text-gray-500">{entry.location}</span>
       </div>
       {entry.bullets && entry.bullets.length > 0 && <BulletList items={entry.bullets} />}
       {entry.subroles && entry.subroles.map((s, i) => <Subrole key={i} subrole={s} />)}
@@ -73,16 +71,14 @@ function EducationEntry({ entry }: { entry: CVSidebarEntry }) {
   return (
     <div className="pb-8 md:col-start-2">
       <div className="flex flex-wrap items-baseline gap-x-3 text-xl">
-        <span className="font-semibold text-gray-900 dark:text-gray-100">
-          {entry.organization}
-        </span>
+        <span className="font-semibold text-gray-900 dark:text-gray-100">{entry.organization}</span>
         <span className="text-gray-700 dark:text-gray-300">{entry.degree}</span>
       </div>
       <div className="mt-0.5 mb-2 flex flex-wrap items-baseline gap-x-3">
-        <span className="font-mono text-sm text-primary-500 dark:text-primary-400">
+        <span className="text-primary-500 dark:text-primary-400 font-mono text-sm">
           {entry.period}
         </span>
-        <span className="text-sm italic text-gray-400 dark:text-gray-500">{entry.location}</span>
+        <span className="text-sm text-gray-400 italic dark:text-gray-500">{entry.location}</span>
       </div>
       {entry.bullets && entry.bullets.length > 0 && <BulletList items={entry.bullets} />}
     </div>
@@ -90,7 +86,8 @@ function EducationEntry({ entry }: { entry: CVSidebarEntry }) {
 }
 
 export default function CVPage() {
-  const { name, tagline, contact, experience, education, academic, honors, languages, athletics } = cvData
+  const { name, tagline, contact, experience, education, academic, honors, languages, athletics } =
+    cvData
 
   return (
     <div>
@@ -119,7 +116,6 @@ export default function CVPage() {
 
         {/* Grid: section labels in col1, content in col2 — desktop only */}
         <div className="md:grid md:grid-cols-[11rem_1fr] md:gap-x-12">
-
           {/* ── Experience ── */}
           <SectionDivider visible />
           <SectionLabel>Experience</SectionLabel>
@@ -161,7 +157,6 @@ export default function CVPage() {
           <div className="pb-8 md:col-start-2">
             <BulletList items={athletics} />
           </div>
-
         </div>
       </div>
     </div>
