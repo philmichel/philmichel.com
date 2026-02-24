@@ -48,19 +48,19 @@ export const cvData = {
         {
           period: '2025–2026',
           role: 'Distinguished Engineer (General Motors)',
-          bullets: ['Defined technical vision and direction across Embodied AI'],
+          bullets: ['Drove technical strategy across Embodied AI'],
         },
         {
           period: '2024–2025',
-          role: 'Principal ML/AI Engineer · Principal Applied Scientist',
+          role: 'Principal AI / ML Engineer · Principal Applied Scientist',
           bullets: [
-            'Led technical strategy, roadmap, and delivery across Simulation, Data, and Testing',
+            'Drove technical strategy across Simulation, Data, and Testing',
           ],
         },
         {
           period: '2023–2024',
           role: 'Technical Advisor to the CTO / SVP of AI',
-          bullets: ['Shaped AI & ML technical strategy and identified key investment areas'],
+          bullets: ['Shaped AI / ML technical strategy, identified key investment areas, drove execution'],
         },
       ],
     },
