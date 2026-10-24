@@ -39,6 +39,9 @@ export const cvData = {
       role: 'SVP of Autonomy & AI',
       organization: 'Motional',
       location: 'Seattle, WA',
+      bullets: [
+        "Lead the science, engineering, and strategic direction behind Motional's autonomous driving technology, across ML, autonomy, data, and infrastructure",
+      ],
     },
     {
       period: '2023–2026',
@@ -53,14 +56,14 @@ export const cvData = {
         {
           period: '2024–2025',
           role: 'Principal AI / ML Engineer · Principal Applied Scientist',
-          bullets: [
-            'Drove technical strategy across Simulation, Data, and Testing',
-          ],
+          bullets: ['Drove technical strategy across Simulation, Data, and Testing'],
         },
         {
           period: '2023–2024',
           role: 'Technical Advisor to the CTO / SVP of AI',
-          bullets: ['Shaped AI / ML technical strategy, identified key investment areas, drove execution'],
+          bullets: [
+            'Shaped AI / ML technical strategy, identified key investment areas, drove execution',
+          ],
         },
       ],
     },
