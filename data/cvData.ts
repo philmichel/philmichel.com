@@ -84,7 +84,7 @@ export const cvData = {
           period: '2019–2020',
           role: 'Principal Product Manager – Technical',
           bullets: [
-            "Amazon Scout — Amazon's robotic last-mile delivery solution",
+            "Amazon Scout: Amazon's robotic last-mile delivery solution",
             'Managed autonomy technology roadmap & execution',
             'Led autonomy product/program management teams',
           ],
