@@ -23,7 +23,8 @@ export interface CVSidebarEntry {
 
 export const cvData = {
   name: 'Philipp Michel',
-  tagline: 'AI & ML · Autonomy · Robotics · Product & Strategy · Derivatives Trading',
+  tagline:
+    'AI & ML · Data & Infrastructure · Autonomy · Robotics · Product & Strategy · Derivatives Trading',
 
   contact: {
     github: 'https://github.com/philmichel',
